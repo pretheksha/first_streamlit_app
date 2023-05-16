@@ -1,3 +1,3 @@
 import streamlit
 
-streamlist.title("Pretheksha is a beautiful, confident and strong person")
+streamlit.title("Pretheksha is a beautiful, confident and strong person")
