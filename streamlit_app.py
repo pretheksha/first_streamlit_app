@@ -1,6 +1,7 @@
 import streamlit
 import pandas
 import requests
+import snowflake.connector
 
 streamlit.title("Pretheksha is a beautiful, confident and strong person")
 streamlit.header("Breakfast Menu")
