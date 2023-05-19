@@ -18,7 +18,9 @@ streamlit.dataframe(fruits_to_show)
 #new section to display fruity vice response
 streamlit.header("Fruityvice Fruit Advice!")
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response.json())
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "Kiwi")
+#streamlit.text(fruityvice_response.json())
+fruityvice_normalized = pandas.json_normalize(fruityvice_response.json()) #take the json version of the data and normalize it
+streamlit.dataframe(fruityvice_normalized) #display the data in tabular format
 
               
